@@ -1,0 +1,281 @@
+Last login: Mon Sep 23 07:52:54 on console
+(base) taylorgaldi@wifi-10-40-19-17 ~ % ls    
+Applications
+AutonomyConsent
+Creative Cloud Files
+Creative Cloud Files tgaldi@umich.edu 2b2d8effef8d3a1f0f543c33fe80f3aba96fae4eefe2dfe58dd468475f786ea8
+Data
+Desktop
+Documents
+Downloads
+Law 580 Torts Groups F21.xlsx
+Lessons
+Library
+Movies
+Music
+Pictures
+Public
+Python-Fundamentals-main.zip
+Untitled.ipynb
+Untitled1.ipynb
+Untitled2.ipynb
+Untitled3.ipynb
+Untitled4.ipynb
+Untitled5.ipynb
+git
+my_first_repo
+newdir
+nltk_data
+(base) taylorgaldi@wifi-10-40-19-17 ~ % cd git
+(base) taylorgaldi@wifi-10-40-19-17 git % git clone https://github.com/usamafication/GitHub-Collaboration-Practice.git
+Cloning into 'GitHub-Collaboration-Practice'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+(base) taylorgaldi@wifi-10-40-19-17 git % git status
+fatal: not a git repository (or any of the parent directories): .git
+(base) taylorgaldi@wifi-10-40-19-17 git % ls 
+Computational-Social-Science-Training-Program
+GitHub-Collaboration-Practice
+git-challenges
+group_project
+my_second_repo
+(base) taylorgaldi@wifi-10-40-19-17 git % cd GitHub-Collaboration-Practice
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git checkout -b new_branch
+Switched to a new branch 'new_branch'
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch new_branch
+Switched to branch 'new_branch'
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 355 bytes | 59.00 KiB/s, done.
+From https://github.com/usamafication/GitHub-Collaboration-Practice
+ * [new branch]      new_branch2 -> origin/new_branch2
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> new_branch
+
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git branch --set-upstream-to=origin/<branch> new_branch
+zsh: no such file or directory: branch
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git push -u origin new_branch
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'new_branch' on GitHub by visiting:
+remote:      https://github.com/usamafication/GitHub-Collaboration-Practice/pull/new/new_branch
+remote: 
+To https://github.com/usamafication/GitHub-Collaboration-Practice.git
+ * [new branch]      new_branch -> new_branch
+branch 'new_branch' set up to track 'origin/new_branch'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git pull
+Already up to date.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % cat Group UT
+cat: Group: No such file or directory
+cat: UT: No such file or directory
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % cd Group UT
+cd: string not in pwd: Group
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % nano "Group UT"
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 321 bytes | 107.00 KiB/s, done.
+From https://github.com/usamafication/GitHub-Collaboration-Practice
+   e3db134..e7cbeb2  main       -> origin/main
+Already up to date.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % nano "Group UT"
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git pull
+Updating e3db134..e7cbeb2
+Fast-forward
+ Group UT | 1 +
+ 1 file changed, 1 insertion(+)
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % nano "Group UT"
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch new_branch
+Switched to branch 'new_branch'
+Your branch is up to date with 'origin/new_branch'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % nano "Group UT"
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git pull
+Already up to date.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % nano "Group UT"
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch "Group UT"
+fatal: invalid reference: Group UT
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch new_branch 
+Switched to branch 'new_branch'
+Your branch is up to date with 'origin/new_branch'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % nano "Group UT" 
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git add *
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git status
+On branch new_branch
+Your branch is up to date with 'origin/new_branch'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   Group UT
+
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git commit -m "Taylor's changes to Group UT"
+[new_branch c85f20b] Taylor's changes to Group UT
+ 1 file changed, 3 insertions(+)
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 401 bytes | 401.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/usamafication/GitHub-Collaboration-Practice.git
+   e3db134..c85f20b  new_branch -> new_branch
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % nano "Group UT"
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git status
+On branch new_branch
+Your branch is up to date with 'origin/new_branch'.
+
+nothing to commit, working tree clean
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git main branch 
+git: 'main' is not a git command. See 'git --help'.
+
+The most similar command is
+	mailinfo
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git pull   
+remote: Enumerating objects: 25, done.
+remote: Counting objects: 100% (24/24), done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 19 (delta 3), reused 8 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (19/19), 9.03 KiB | 420.00 KiB/s, done.
+From https://github.com/usamafication/GitHub-Collaboration-Practice
+   e7cbeb2..c6b2382  main        -> origin/main
+   c85f20b..14918f5  new_branch  -> origin/new_branch
+   7ca8fff..508900e  new_branch2 -> origin/new_branch2
+Updating e7cbeb2..c6b2382
+Fast-forward
+ Group UT       |   4 +
+ codeforproject | 346 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 350 insertions(+)
+ create mode 100644 codeforproject
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % nano "Group UT"
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md	codeforproject
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch new_branch
+Switched to branch 'new_branch'
+Your branch is behind 'origin/new_branch' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git pull
+Updating c85f20b..14918f5
+Fast-forward
+ Group UT | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md	codeforproject
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch new_branch 
+Switched to branch 'new_branch'
+Your branch is up to date with 'origin/new_branch'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git pull
+Already up to date.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch main 
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % cp codeforproject
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file ... target_directory
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git checkoutnew_branch
+git: 'checkoutnew_branch' is not a git command. See 'git --help'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % cp codeforproject
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file ... target_directory
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch 
+fatal: missing branch or commit argument
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch new_branch
+Switched to branch 'new_branch'
+Your branch is up to date with 'origin/new_branch'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % pwd        
+/Users/taylorgaldi/git/GitHub-Collaboration-Practice
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % cp </Users/taylorgaldi/git/GitHub-Collaboration-Practice></Users/taylorgaldi/git/GitHub-Collaboration-Practice/new_branch>
+zsh: parse error near `<'
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % cp </Users/taylorgaldi/git/GitHub-Collaboration-Practice></Users/taylorgaldi/git/GitHub-Collaboration-Practice/new_branch>
+zsh: parse error near `<'
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch new_branch
+Switched to branch 'new_branch'
+Your branch is up to date with 'origin/new_branch'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % pwd
+/Users/taylorgaldi/git/GitHub-Collaboration-Practice
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % /Users/taylorgaldi/git/GitHub-Collaboration-Practice /Users/taylorgaldi/git/GitHub-Collaboration-Practice/new_branch
+zsh: permission denied: /Users/taylorgaldi/git/GitHub-Collaboration-Practice
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % cp /Users/taylorgaldi/git/GitHub-Collaboration-Practice/codeforproject /Users/taylorgaldi/git/GitHub-Collaboration-Practice/new_branch
+cp: /Users/taylorgaldi/git/GitHub-Collaboration-Practice/codeforproject: No such file or directory
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % cp /Users/taylorgaldi/git/GitHub-Collaboration-Practice/codeforproject.txt  /Users/taylorgaldi/git/GitHub-Collaboration-Practice/new_branch
+cp: /Users/taylorgaldi/git/GitHub-Collaboration-Practice/codeforproject.txt: No such file or directory
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % cp /Users/taylorgaldi/git/GitHub-Collaboration-Practice/codeforproject.txt  /Users/taylorgaldi/git/GitHub-Collaboration-Practice/new_branch
+cp: /Users/taylorgaldi/git/GitHub-Collaboration-Practice/codeforproject.txt: No such file or directory
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md	codeforproject
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % cp /Users/taylorgaldi/git/GitHub-Collaboration-Practice/codeforproject  /Users/taylorgaldi/git/GitHub-Collaboration-Practice/new_branch 
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git switch new_branch
+Switched to branch 'new_branch'
+Your branch is up to date with 'origin/new_branch'.
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % ls
+Group UT	README.md	new_branch
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % nano "new_branch"
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % mv new_branch codeforproject
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % nano "codeforproject"
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % touch taylorcode
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % nano "taylorcode"
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git add*
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git status
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git commit -m "taylor code"
+(base) taylorgaldi@wifi-10-40-19-17 GitHub-Collaboration-Practice % git push
