@@ -342,5 +342,8 @@ Your branch is up to date with 'origin/new_branch2'.
 (base) usamafaheem@wifi-10-41-110-38 GitHub-Collaboration-Practice % vim "Group UT"
 (base) usamafaheem@wifi-10-41-110-38 GitHub-Collaboration-Practice % touch codeforproject
 (base) usamafaheem@wifi-10-41-110-38 GitHub-Collaboration-Practice % vim codeforproject
-(base) usamafaheem@wifi-10-41-110-38 GitHub-Collaboration-Practice % 
+(base) usamafaheem@wifi-10-41-110-38 GitHub-Collaboration-Practice % git add *
+(base) usamafaheem@wifi-10-41-110-38 GitHub-Collaboration-Practice % git commit -m "code added here"
+(base) usamafaheem@wifi-10-41-110-38 GitHub-Collaboration-Practice % git push
+
 
